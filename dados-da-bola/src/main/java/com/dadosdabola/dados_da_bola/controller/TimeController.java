@@ -1,5 +1,6 @@
 package com.dadosdabola.dados_da_bola.controller;
 
+import com.dadosdabola.dados_da_bola.entities.Jogador;
 import com.dadosdabola.dados_da_bola.entities.Time;
 import com.dadosdabola.dados_da_bola.service.TimeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,12 @@ public class TimeController {
     public ResponseEntity<List<Time>> buscarTimes() {
         List<Time> lista = service.findAll();
         return ResponseEntity.ok(lista);
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Time> buscarPoId(@PathVariable Long id){
+        Time time = service.findById(id);
+        return ResponseEntity.ok().body(time);
     }
 
     @PostMapping

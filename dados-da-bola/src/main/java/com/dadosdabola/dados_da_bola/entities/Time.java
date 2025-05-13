@@ -28,6 +28,10 @@ public class Time {
         this.escudo_url = escudo_url;
     }
 
+    public Long getId(){
+        return id;
+    }
+
     public String getNome() {
         return nome;
     }
