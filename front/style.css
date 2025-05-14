@@ -1,0 +1,84 @@
+.container {
+    background-color: #fff;
+    font-family: Verdana;
+    display: flex; 
+    height: 100vh;
+    flex-direction: row;
+}
+.navbar {
+    background-color: #ddd;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 10px 0 0  10px;
+    flex: 1;
+    
+}
+.main{
+    background-color: #bbb;
+    color: #333;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    flex: 1;
+    justify-content: space-around;
+    
+}
+.logotexto{
+    flex: 1;
+}
+.pesquisa{
+    flex: 1;
+}
+.secao2{
+    display: flex;
+    flex-direction: row;
+    flex: 9;
+}
+.times{
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.estatisticas{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.selecao{
+    background-color: #eee;
+    border-radius: 10px;
+    flex: 4;
+}
+.stats{
+    background-color: #eee;
+    border-radius: 10px;
+    flex: 1;
+}
+input{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    height: 20px;
+    
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
