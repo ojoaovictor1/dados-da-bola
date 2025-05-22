@@ -47,4 +47,10 @@ public class NotaJogadorController {
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/rodadas/{rodadaId}/selecao")
+    public ResponseEntity<List<NotaJogador>> getSelecaoDaRodada(@PathVariable Long rodadaId){
+        List<NotaJogador> selecao = service.gerarSelecaoDaRodada(rodadaId);
+        return ResponseEntity.ok(selecao);
+    }
 }
